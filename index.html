@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GYM</title>
+        <meta charset="utf-8">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js.map"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> -->
+        <link rel="stylesheet" href="animate.min.css">
+
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/all.min.js"></script>
+
+        <style>
+            *{
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                font-family: 'Lobster', cursive;
+                scroll-behavior: smooth;
+                
+            }
+            .continar{
+                width: 1200px;
+                margin: 0px;
+                text-align: center;
+            }
+            .navbar{
+                width: 100%;
+                font-size: 20px;
+                position: absolute;
+                z-index: 10;
+            }
+            .navbar .logo{
+                float: right;
+                width: 40%;
+                text-transform: uppercase;
+                color: #ffff00 ;
+                font-weight: bold;
+                font-size: 50px;
+                padding-top: 4px;
+
+            }
+            .navbar .logo h2{
+                padding-left: 40px;
+            }
+            .navbar-nav{
+                float: right;
+                width: 20%;
+                padding-left: 20px;
+                font-weight: bold;
+            }
+            .navbar-light .navbar-nav .nav-link{
+                color: white;
+            }
+            .navbar-light .navbar-nav .nav-link:hover{
+                color: #ffff00;
+                border-bottom: #ffff00 2px solid;
+            }
+            .nav-link{
+                margin-right: 15px;
+            }
+            /* .navbar-nav ul{
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+                padding-left: 248px;
+            }
+            .navbar-nav ul li{
+                display: inline-block;
+                margin: 0px 10px;
+                padding: 10px 0px;
+            }
+            .navbar-nav ul li a{
+                color: #fff;
+                text-decoration: none;
+            }
+            .navbar-nav ul li a:hover{
+                color: #ffff00 ;
+            }
+            .navbar-nav ul li:hover{
+                color: #ffff00 ;
+                border-bottom: 2px solid;
+            } */
+        
+            
+            /* end navbar */
+
+
+    /* start slider */
+        .carousel-inner img{
+            height: 700px;
+        }    
+
+        .carousel-item{
+            background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+        }
+    /* end slider */
+
+
+    /* start service */
+    .mt-60{
+    margin-top:60px;
+}
+
+.section-block-grey {
+    padding: 90px 0px 90px 0px;
+    background-color: #f9f9f9;
+}
+.section-block-grey h1{
+    text-align: center;
+    font-size: 50px;
+  font-weight: bold;
+}
+
+.serv-section-2 {
+    position: relative;
+    border: 1px solid #eee;
+    background: #fff;
+    box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.16);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.serv-section-2:before {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    z-index: 0;
+    content: " ";
+    width: 120px;
+    height: 120px;
+    background: #f5f5f5;
+    border-bottom-left-radius: 136px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+.serv-section-2-icon {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    max-width: 100px;
+    z-index: 1;
+    text-align: center;
+}
+
+.serv-section-2-icon i {
+    color: #ffff00 ;
+    font-size: 48px;
+    line-height: 65px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+.serv-section-desc {
+    position: relative;
+}
+
+.serv-section-2 h4 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.serv-section-2 h5 {
+    color: #333;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 5px;
+}
+
+.section-heading-line-left {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #ffff00 ;
+    border-radius: 25%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.serv-section-2 p {
+    margin-top: 25px;
+    padding-right: 50px;
+}
+
+.serv-section-2:hover .serv-section-2-icon i {
+    color: #fff;
+}
+
+.serv-section-2:hover:before {
+    background: #ffff00;
+}
+    /* end service */
+
+
+/* start fitness programs */
+
+/* @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,900); */
+
+html,
+body {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%; 
+  background: #f9f9f9;
+   
+}
+ 
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container-big {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+.big-logo {
+  width: 100px;
+  margin-bottom:15px
+}
+h1.heading {
+  color:black;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 70px;
+  
+}
+
+.carbox {
+  display: block; 
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+    transition: box-shadow .25s; 
+}
+.carbox:hover {
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.img-carbox {
+  width: 100%;
+  height:200px;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  display:block;
+    overflow: hidden;
+}
+.img-carbox img{
+  width: 100%;
+  height: 200px;
+  object-fit:cover; 
+  transition: all .25s ease;
+} 
+.carbox-content {
+  padding:15px;
+  text-align:left;
+}
+.carbox-title {
+  margin-top:0px;
+  font-weight: 700;
+  font-size: 1.65em;
+}
+.carbox-title p {
+  color: #000;
+  text-decoration: none !important;
+}
+
+    
+/* end fitness programs */
+
+
+/* start location */
+.location {
+    margin: 10px;
+    padding: 70px;
+    height: 700px;
+    overflow: hidden;
+}
+.location h1{
+    text-align: center;
+    font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+.location p{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+/* end location */
+
+
+/* start contact */
+@import url("https://fonts.googleapis.com/css?family=Rubik:500,700|Roboto:400,600");
+.section-padding {
+    padding: 45px 0;
+}
+.section-dark {
+    background-color: #f9f9f9;
+    z-index: -2;
+}
+.form-control,
+.form-group .form-control {
+    border: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#009688), to(#009688)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#009688, #009688), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#009688, #009688), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#009688, #009688), linear-gradient(#D2D2D2, #D2D2D2);
+    -webkit-background-size: 0 2px, 100% 1px;
+    background-size: 0 2px, 100% 1px;
+    background-repeat: no-repeat;
+    background-position: center bottom, center -webkit-calc(100% - 1px);
+    background-position: center bottom, center calc(100% - 1px);
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-transition: background 0s ease-out;
+    -o-transition: background 0s ease-out;
+    transition: background 0s ease-out;
+    float: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0
+}
+
+.form-control::-moz-placeholder,
+.form-group .form-control::-moz-placeholder {
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-control:-ms-input-placeholder,
+.form-group .form-control:-ms-input-placeholder {
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-control::-webkit-input-placeholder,
+.form-group .form-control::-webkit-input-placeholder {
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-control[disabled],
+.form-control[readonly],
+.form-group .form-control[disabled],
+.form-group .form-control[readonly],
+fieldset[disabled] .form-control,
+fieldset[disabled] .form-group .form-control {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.form-control[disabled],
+.form-group .form-control[disabled],
+fieldset[disabled] .form-control,
+fieldset[disabled] .form-group .form-control {
+    background-image: none;
+    border-bottom: 1px dotted #D2D2D2
+}
+
+.form-group {
+    position: relative
+}
+
+.form-group.label-floating label.control-label,
+.form-group.label-placeholder label.control-label,
+.form-group.label-static label.control-label {
+    position: absolute;
+    pointer-events: none;
+    -webkit-transition: .3s ease all;
+    -o-transition: .3s ease all;
+    transition: .3s ease all
+}
+
+.form-group.label-floating label.control-label {
+    will-change: left, top, contents
+}
+
+.form-group.label-placeholder:not(.is-empty) label.control-label {
+    display: none
+}
+#contact h1{
+    text-align: center;
+    font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-bottom: 40px;
+  
+}
+
+.form-group .help-block {
+    position: absolute;
+    display: none
+}
+
+.form-group.is-focused .form-control {
+    outline: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#009688), to(#009688)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#009688, #009688), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#009688, #009688), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#009688, #009688), linear-gradient(#D2D2D2, #D2D2D2);
+    -webkit-background-size: 100% 2px, 100% 1px;
+    background-size: 100% 2px, 100% 1px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s
+}
+
+.form-group.is-focused .form-control .material-input:after {
+    background-color: #009688
+}
+
+.form-group.is-focused label,
+.form-group.is-focused label.control-label {
+    color: #009688
+}
+
+.form-group.is-focused.label-placeholder label,
+.form-group.is-focused.label-placeholder label.control-label {
+    color: #BDBDBD
+}
+
+.form-group.is-focused .help-block {
+    display: block
+}
+
+.form-group.has-warning .form-control {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.form-group.has-warning.is-focused .form-control {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff5722), to(#ff5722)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#ff5722, #ff5722), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#ff5722, #ff5722), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#ff5722, #ff5722), linear-gradient(#D2D2D2, #D2D2D2)
+}
+
+.form-group.has-warning .help-block,
+.form-group.has-warning label.control-label {
+    color: #ff5722
+}
+
+.form-group.has-error .form-control {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.form-group.has-error .help-block,
+.form-group.has-error label.control-label {
+    color: #f44336
+}
+
+.form-group.has-success .form-control {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.form-group.has-success.is-focused .form-control {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4caf50), to(#4caf50)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#4caf50, #4caf50), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#4caf50, #4caf50), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#4caf50, #4caf50), linear-gradient(#D2D2D2, #D2D2D2)
+}
+
+.form-group.has-success .help-block,
+.form-group.has-success label.control-label {
+    color: #4caf50
+}
+
+.form-group.has-info .form-control {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.form-group.has-info.is-focused .form-control {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#03a9f4), to(#03a9f4)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#03a9f4, #03a9f4), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#03a9f4, #03a9f4), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#03a9f4, #03a9f4), linear-gradient(#D2D2D2, #D2D2D2)
+}
+
+.form-group.has-info .help-block,
+.form-group.has-info label.control-label {
+    color: #03a9f4
+}
+
+.form-group textarea {
+    resize: none
+}
+
+.form-group textarea~.form-control-highlight {
+    margin-top: -11px
+}
+
+.form-group select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+.form-group select~.material-input:after {
+    display: none
+}
+
+.form-control {
+    margin-bottom: 7px
+}
+
+.form-control::-moz-placeholder {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-control:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-control::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+.checkbox label,
+.radio label,
+label {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+label.control-label {
+    font-size: 12px;
+    line-height: 1.07142857;
+    font-weight: 400;
+    margin: 16px 0 0 0
+}
+
+.help-block {
+    margin-top: 0;
+    font-size: 12px
+}
+
+.form-group {
+    padding-bottom: 7px;
+    margin: 28px 0 0 0
+}
+
+.form-group .form-control {
+    margin-bottom: 7px
+}
+
+.form-group .form-control::-moz-placeholder {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group .form-control:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group .form-control::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group .checkbox label,
+.form-group .radio label,
+.form-group label {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group label.control-label {
+    font-size: 12px;
+    line-height: 1.07142857;
+    font-weight: 400;
+    margin: 16px 0 0 0
+}
+
+.form-group .help-block {
+    margin-top: 0;
+    font-size: 12px
+}
+
+.form-group.label-floating label.control-label,
+.form-group.label-placeholder label.control-label {
+    top: -7px;
+    font-size: 16px;
+    line-height: 1.42857143
+}
+
+.form-group.label-floating.is-focused label.control-label,
+.form-group.label-floating:not(.is-empty) label.control-label,
+.form-group.label-static label.control-label {
+    top: -30px;
+    left: 0;
+    font-size: 12px;
+    line-height: 1.07142857
+}
+
+.form-group.label-floating input.form-control:-webkit-autofill~label.control-label label.control-label {
+    top: -30px;
+    left: 0;
+    font-size: 12px;
+    line-height: 1.07142857
+}
+
+.form-group.form-group-sm {
+    padding-bottom: 3px;
+    margin: 21px 0 0 0
+}
+
+.form-group.form-group-sm .form-control {
+    margin-bottom: 3px
+}
+
+.form-group.form-group-sm .form-control::-moz-placeholder {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group.form-group-sm .form-control:-ms-input-placeholder {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group.form-group-sm .form-control::-webkit-input-placeholder {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group.form-group-sm .checkbox label,
+.form-group.form-group-sm .radio label,
+.form-group.form-group-sm label {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group.form-group-sm label.control-label {
+    font-size: 9px;
+    line-height: 1.125;
+    font-weight: 400;
+    margin: 16px 0 0 0
+}
+
+.form-group.form-group-sm .help-block {
+    margin-top: 0;
+    font-size: 9px
+}
+
+.form-group.form-group-sm.label-floating label.control-label,
+.form-group.form-group-sm.label-placeholder label.control-label {
+    top: -11px;
+    font-size: 11px;
+    line-height: 1.5
+}
+
+.form-group.form-group-sm.label-floating.is-focused label.control-label,
+.form-group.form-group-sm.label-floating:not(.is-empty) label.control-label,
+.form-group.form-group-sm.label-static label.control-label {
+    top: -25px;
+    left: 0;
+    font-size: 9px;
+    line-height: 1.125
+}
+
+.form-group.form-group-sm.label-floating input.form-control:-webkit-autofill~label.control-label label.control-label {
+    top: -25px;
+    left: 0;
+    font-size: 9px;
+    line-height: 1.125
+}
+
+.form-group.form-group-lg {
+    padding-bottom: 9px;
+    margin: 30px 0 0 0
+}
+
+.form-group.form-group-lg .form-control {
+    margin-bottom: 9px
+}
+
+.form-group.form-group-lg .form-control::-moz-placeholder {
+    font-size: 18px;
+    line-height: 1.3333333;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group.form-group-lg .form-control:-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 1.3333333;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group.form-group-lg .form-control::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 1.3333333;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group.form-group-lg .checkbox label,
+.form-group.form-group-lg .radio label,
+.form-group.form-group-lg label {
+    font-size: 18px;
+    line-height: 1.3333333;
+    color: #BDBDBD;
+    font-weight: 400
+}
+
+.form-group.form-group-lg label.control-label {
+    font-size: 14px;
+    line-height: .99999998;
+    font-weight: 400;
+    margin: 16px 0 0 0
+}
+
+.form-group.form-group-lg .help-block {
+    margin-top: 0;
+    font-size: 14px
+}
+
+.form-group.form-group-lg.label-floating label.control-label,
+.form-group.form-group-lg.label-placeholder label.control-label {
+    top: -5px;
+    font-size: 18px;
+    line-height: 1.3333333
+}
+
+.form-group.form-group-lg.label-floating.is-focused label.control-label,
+.form-group.form-group-lg.label-floating:not(.is-empty) label.control-label,
+.form-group.form-group-lg.label-static label.control-label {
+    top: -32px;
+    left: 0;
+    font-size: 14px;
+    line-height: .99999998
+}
+
+.form-group.form-group-lg.label-floating input.form-control:-webkit-autofill~label.control-label label.control-label {
+    top: -32px;
+    left: 0;
+    font-size: 14px;
+    line-height: .99999998
+}
+
+select.form-control {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0
+}
+
+.form-group.is-focused select.form-control {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #D2D2D2
+}
+
+.form-group.is-focused select.form-control[multiple],
+select.form-control[multiple] {
+    height: 85px
+}
+
+.input-group-btn .btn {
+    margin: 0 0 7px 0
+}
+
+.form-group.form-group-sm .input-group-btn .btn {
+    margin: 0 0 3px 0
+}
+
+.form-group.form-group-lg .input-group-btn .btn {
+    margin: 0 0 9px 0
+}
+
+.input-group .input-group-btn {
+    padding: 0 12px
+}
+
+.input-group .input-group-addon {
+    border: 0;
+    background: 0 0
+}
+
+.form-group input[type=file] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100
+}
+.contact-widget-section .single-contact-widget {
+    background: #f9f9f9;
+    padding: 20px 25px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.26);
+    height: 260px;
+    margin-top: 25px;
+    transition: all 0.3s ease-in-out
+}
+
+.contact-widget-section .single-contact-widget i {
+    font-size: 75px
+}
+
+.contact-widget-section .single-contact-widget h3 {
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+    padding-bottom: 10px
+}
+
+.contact-widget-section .single-contact-widget p {
+    line-height: 16px
+}
+
+.contact-widget-section .single-contact-widget:hover {
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.46);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out
+}
+
+#contactForm {
+    margin-top: -10px
+}
+
+#contactForm .form-group label.control-label {
+    color: #8c8c8c
+}
+
+#contactForm .form-control {
+    font-weight: 500;
+    height: auto
+}
+
+/* end contact */
+span{
+    color: #ffff00;
+}
+        </style>
+
+ 
+    </head>
+    <boby>
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="logo">
+                    <h2 class="wow fadeInDown">GYM</h2>
+                 </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link wow fadeInDown" data-wow-delay=".1s">Home</a>
+                      <!-- <a class="nav-link" href="#">Home</a> -->
+                    </li>
+                    <li class="nav-item">
+                        <a href="#ser" class="nav-link wow fadeInDown" data-wow-delay=".3s">Service</a>
+                      <!-- <a class="nav-link" href="#">Link</a> -->
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#loc" class="nav-link wow fadeInDown" data-wow-delay=".7s">Location</a>
+                      <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                    </li>
+                    <li class="nav-item">
+                        <a href="#con" class="nav-link wow fadeInDown" data-wow-delay=".9s">Contact</a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </nav>
+        
+        <!-- start navbar -->
+        <!-- <div class="navber">
+            <div class="continar">
+                <div class="logo">
+                   <h2 class="wow fadeInDown">GYM</h2>
+                </div>
+                <div class="links">
+                  <ul>
+                    <li><a href="#" class="wow fadeInDown" data-wow-delay=".1s">Home</a></li>
+                    <li><a href="#ser" class="wow fadeInDown" data-wow-delay=".3s">Service</a></li>
+                    <li><a href="#fit" class="wow fadeInDown" data-wow-delay=".5s">Fitness Programs</a></li>
+                    <li><a href="#loc" class="wow fadeInDown" data-wow-delay=".7s">Location</a></li>
+                    <li><a href="#con" class="wow fadeInDown" data-wow-delay=".9s">Contact</a></li>
+                  </ul>
+                </div>
+            </div>
+            </div>
+        
+        </div> -->
+
+
+
+        <!-- end navbar -->
+
+
+
+
+         <!-- Swiper -->
+         <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="10000">
+                <img src="images/slider1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-interval="2000">
+                <img src="images/slider2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/slider4.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </header>
+  <!-- end slider -->
+
+  <!-- start service -->
+  <div class="section-block-grey">
+    <div class="container">
+        <div class="section-heading center-holder wow fadeIn" data-wow-offset="70">
+            <h1 id="ser"> <span>S</span>ervices</h1>
+            <div class="section-heading-line"></div>    
+        </div>
+        <div class="row mt-60">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 wow fadeInLeft" data-wow-offset="70">
+                <div class="serv-section-2">
+                    <div class="serv-section-2-icon"> <i class="fas fa-gem"></i> </div>
+                    <div class="serv-section-desc">
+                        <h4>Planning</h4>
+                        <h5>Business Planning</h5> </div>
+                    <div class="section-heading-line-left"></div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 wow fadeInDown" data-wow-offset="70">
+                <div class="serv-section-2 serv-section-2-act">
+                    <div class="serv-section-2-icon serv-section-2-icon-act"> <i class="fas fa-cogs"></i> </div>
+                    <div class="serv-section-desc">
+                        <h4>Management</h4>
+                        <h5>Retirement Planning</h5> </div>
+                    <div class="section-heading-line-left"></div>
+                   
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 wow fadeInRight" data-wow-offset="70">
+                <div class="serv-section-2">
+                    <div class="serv-section-2-icon"> <i class="fas fa-signature"></i> </div>
+                    <div class="serv-section-desc">
+                        <h4>Accumulation</h4>
+                        <h5>Support and Sell</h5> </div>
+                    <div class="section-heading-line-left"></div>
+                    
+                </div>
+            </div>
+        </div>
+		<div class="row mt-60">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 wow fadeInRight" data-wow-offset="80">
+                <div class="serv-section-2">
+                    <div class="serv-section-2-icon"> <i class="fas fa-shield-alt"></i> </div>
+                    <div class="serv-section-desc">
+                        <h4>Security </h4>
+                        <h5>Secure Business</h5> </div>
+                    <div class="section-heading-line-left"></div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12 wow fadeInUp" data-wow-offset="80">
+                <div class="serv-section-2 serv-section-2-act">
+                    <div class="serv-section-2-icon serv-section-2-icon-act"> <i class="far fa-clock"></i> </div>
+                    <div class="serv-section-desc">
+                        <h4>24/7 Available </h4>
+                        <h5>All time available </h5> </div>
+                    <div class="section-heading-line-left"></div>
+                   
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12 wow fadeInLeft" data-wow-offset="80">
+                <div class="serv-section-2">
+                    <div class="serv-section-2-icon"> <i class="fas fa-signature"></i> </div>
+                    <div class="serv-section-desc">
+                        <h4> Customer Support </h4>
+                        <h5>Support and Sell</h5> </div>
+                    <div class="section-heading-line-left"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  <!-- end service -->
+
+<!-- start fitness programs -->
+
+<section class="wrapper">
+    <div class="container-big">
+        <div>
+            <img src="" class="big-logo"/>
+            <h1 class="heading wow slideInUp" data-wow-offset="125" id="fit">
+                <span>F</span>itness Programs
+            </h1>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-xs-12 col-sm-12 wow slideInRight" data-wow-offset="130">
+                        <div class="carbox">
+                            <!-- <a class="img-carbox" href="http://www.big.com/2016/03/bootstrap-3-carousel-fade-effect.html"> -->
+                            <img src="images/fit1.jpg" width="100%" >
+                          <!-- </a> -->
+                            <div class="carbox-content">
+                                <h4 class="carbox-title">
+                                    <p> GYM CHALLENGE
+                                  </p>
+                                </h4>
+                                <p class="">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rerum ullam,
+                                     Ratione molestias beatae est suscipit obcaecati quos eaque iusto esse!
+                                </p>
+                            </div>
+                            <!-- <div class="carbox-read-more">
+                                <a href="http://www.big.com/2016/03/bootstrap-3-carousel-fade-effect.html" class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-xs-12 col-sm-12 wow slideInDown" data-wow-offset="130">
+                        <div class="carbox">
+                            <!-- <a class="img-carbox" href="http://www.big.com/2016/03/5-button-hover-animation-effects-css3.html"> -->
+                            <img src="images/fit2.jpg" width="100%" />
+                          <!-- </a> -->
+                            <div class="carbox-content">
+                                <h4 class="carbox-title">
+                                    <p> PERSONAL TRAINING
+                                  </p>
+                                </h4>
+                                <p class="">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Fugit sapiente nam beatae. Aspernatur ex vel dicta, corrupti ea ad? Harum velit minus, 
+                                    cupiditate quis natus impedit dignissimos aliquam unde optio?
+                                </p>
+                            </div>
+                            <!-- <div class="carbox-read-more">
+                                <a href="http://codepen.io/wisnust10/full/ZWERZK/" class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-xs-12 col-sm-12 wow slideInLeft" data-wow-offset="130">
+                        <div class="carbox">
+                            <!-- <a class="img-carbox" href="http://www.big.com/2016/03/5-button-hover-animation-effects-css3.html"> -->
+                            <img src="images/fit3.jpg" width="100%" />
+                          <!-- </a> -->
+                            <div class="carbox-content">
+                                <h4 class="carbox-title">
+                                    <p> GROUP TRAINING
+                                    </p>
+                                </h4>
+                                <p class="">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                  quod voluptates similique consectetur sunt praesentium quisquam in ipsa?
+                                </p>
+                            </div>
+                            <!-- <div class="carbox-read-more">
+                                <a href="http://www.big.com/2016/03/5-button-hover-animation-effects-css3.html" class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- end fitness programs -->
+
+<!-- start location -->
+<div class="location">
+    <div class="continar-fluid">
+        <h1 id="loc" class="wow bounceInLeft" data-wow-offset="150"> <span>L</span>ocation</h1>
+        <p class="text-center wow bounce" data-wow-offset="150">You will find us here </p>
+        <iframe  class="wow bounceInRight well well-sm col-lg-12 col-md-12 col-sm-12 col-xs-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3438.972023396851!2d31.18709198539601!3d30.465230505527597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7df59aee9c4a3%3A0x76e0e904a0dd423f!2z2YXYrdmF2K8g2LnYt9mK2Kkg2YXZhti12YjYsdiMINmC2LPZhSDYqNmG2YfYp9iMINio2YbZh9in2Iwg2KfZhNmC2YTZitmI2KjZitip2Iwg2YXYtdix!5e0!3m2!1sar!2sbd!4v1578565380040!5m2!1sar!2sbd"  height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+
+</div>
+
+<!-- end location -->
+
+
+<!-- start contact -->
+<section class="Material-contact-section section-padding section-dark" id="contact">
+    <div class="container">
+        <h1 id="con"> <span>C</span>ontact with us</h1>
+        <div class="row">
+            <!-- Section Titile -->
+            <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                <h1 class="section-title">Love to Hear From You</h1>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Section Titile -->
+            <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content.</p>
+
+              <div class="find-widget">
+               Name :  GYM  
+              </div>
+              <div class="find-widget">
+               Address :  Benha - Qlubia - Egypt
+              </div>
+              <div class="find-widget">
+                Phone :  01012762282
+              </div>
+              
+              <div class="find-widget">
+                Website :  mohamed.hegazy81@yahoo.com
+              </div>
+              <div class="find-widget">
+                 Program :  sat to thr : 10:00 AM - 1:00 PM
+              </div>
+            </div>
+            <!-- contact form -->
+            <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+                <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                    <!-- Name -->
+                    <div class="form-group label-floating">
+                      <label class="control-label" for="name">Name</label>
+                      <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- email -->
+                    <div class="form-group label-floating">
+                      <label class="control-label" for="email">Email</label>
+                      <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- Subject -->
+                    <div class="form-group label-floating">
+                      <label class="control-label">Subject</label>
+                      <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- Message -->
+                    <div class="form-group label-floating">
+                        <label for="message" class="control-label">Message</label>
+                        <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- Form Submit -->
+                    <div class="form-submit mt-5">
+                        <!-- <button class="btn btn-common" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Send Message</button> -->
+                        <button type="button" class="btn btn-warning">Send Message</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </section>
+<!-- end contact -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="wow.min.js"></script>
+<script>
+    new WOW().init();
+    </script>
+</boby>
+</html>
